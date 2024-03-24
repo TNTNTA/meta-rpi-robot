@@ -21,6 +21,14 @@ IMAGE_INSTALL +=" \
 	raspi-gpio \
 	ros-core \
 	turtlesim \
+        fontconfig \
+        ttf-bitstream-vera \
+        qtbase \
+        qtbase-plugins \
+        qtdeclarative \
+        qtdeclarative-qmlplugins \
+        qtquickcontrols2 \
+	luncher \
 "
 
 # systemd settings
