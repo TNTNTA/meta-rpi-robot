@@ -21,19 +21,15 @@ IMAGE_INSTALL +=" \
 	raspi-gpio \
 	ros-core \
 	turtlesim \
-        fontconfig \
-        ttf-bitstream-vera \
-        qtbase \
-        qtbase-plugins \
-        qtdeclarative \
-        qtdeclarative-qmlplugins \
-        qtquickcontrols2 \
+    	fontconfig \
+    	ttf-bitstream-vera \
+    	qtbase \
+    	qtbase-plugins \
+    	qtdeclarative \
+    	qtdeclarative-qmlplugins \
+    	qtquickcontrols2 \
 	luncher \
+	vlanconfig \
 "
 
-# systemd settings
-DISTRO_FEATURES:append = " systemd"
-VIRTUAL-RUNTIME_init_manager = "systemd"
-DISTRO_FEATURES_BACKFILL_CONSIDERED:append = " sysvinit"
-VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
 
