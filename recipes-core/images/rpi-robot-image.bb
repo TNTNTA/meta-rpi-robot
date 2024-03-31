@@ -10,6 +10,9 @@ SDIMG_ROOTFS_TYPE="ext4.xz"
 # enable uart
 ENABLE_UART="1"
 
+DISTRO_FEATURES:append = " opengl"
+DISTRO_FEATURES:remove = " x11"
+
 IMAGE_FEATURES += "ssh-server-openssh"
 
 IMAGE_INSTALL +=" \

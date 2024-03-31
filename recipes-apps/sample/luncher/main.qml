@@ -3,7 +3,7 @@ import QtQuick.Window 2.12
 
 Window {
     visible: true
-    width: 640
+    width: 800
     height: 480
     title: qsTr("Hello Rpi Robot")
 
@@ -11,7 +11,7 @@ Window {
         id: imageDisplay
         anchors.centerIn: parent
         source: "qrc:/tt-robot_logo.jpeg"
-        width: 640
+        width: 800
         height: 480
         fillMode: Image.PreserveAspectFit
     }

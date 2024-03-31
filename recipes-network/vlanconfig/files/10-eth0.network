@@ -2,8 +2,8 @@
 Name=eth0
 
 [Network]
-Address=192.168.34.20/24
-Gateway=192.168.34.1
+Address=192.168.31.20/24
+Gateway=192.168.31.1
 DNS=8.8.8.8
 
 VLAN=eth0.104
