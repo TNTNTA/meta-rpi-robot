@@ -10,4 +10,5 @@ inherit packagegroup
 RDEPENDS:${PN} = "\
 	luncher \
 	vlanconfig \
+    rpi-robot-init \
 "

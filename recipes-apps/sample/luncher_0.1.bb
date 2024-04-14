@@ -19,4 +19,4 @@ do_install() {
     install -m 0755 ${B}/qml_luncher    ${D}${bindir}
 }
 
-FILES_${PN} = "${bindir}/*"
+FILES:${PN} = "${bindir}/*"

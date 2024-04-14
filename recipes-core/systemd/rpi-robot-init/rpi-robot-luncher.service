@@ -1,0 +1,12 @@
+[Unit]
+Description=Initial RPI Robot Luncher
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=-/sbin/rpi_robot_init.sh
+
+
+[Install]
+WantedBy=multi-user.target
