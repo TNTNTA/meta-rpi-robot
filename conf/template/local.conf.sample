@@ -35,7 +35,6 @@
 #MACHINE ?= "edgerouter"
 #
 # This sets the default machine to be qemux86-64 if no other machine is selected:
-# MACHINE ??= "qemux86-64"
 MACHINE ??= "raspberrypi4-64"
 
 #
@@ -49,7 +48,7 @@ MACHINE ??= "raspberrypi4-64"
 #
 # The default is a downloads directory under TOPDIR which is the build directory.
 #
-#DL_DIR ?= "${TOPDIR}/downloads"
+DL_DIR ?= "${TOPDIR}/../../robot/downloads"
 
 #
 # Where to place shared-state files
@@ -276,7 +275,11 @@ PACKAGECONFIG:append:pn-qemu-system-native = " sdl"
 # this doesn't mean anything to you.
 CONF_VERSION = "2"
 
-# enable uart
+############################ Add by tao #######################################
+IMAGE_FSTYPES = "ext4.xz rpi-sdimg"
+SDIMG_ROOTFS_TYPE="ext4.xz"
+
+## enable uart
 ENABLE_UART="1"
 
 ## systemd settings
@@ -284,3 +287,4 @@ DISTRO_FEATURES:append = " systemd"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 DISTRO_FEATURES_BACKFILL_CONSIDERED:append = " sysvinit"
 VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+########################### End by tao ########################################
