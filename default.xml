@@ -12,5 +12,6 @@
   <project name="meta-rpi-robot" path="poky-kirkstone/meta-rpi-robot" revision="main"/>
   <project name="meta-ros" path="poky-kirkstone/meta-ros" remote="ros" revision="kirkstone"/>
   <project name="meta-qt5/meta-qt5" path="poky-kirkstone/meta-qt5" remote="github" revision="kirkstone"/>
+  <project name="meta-openembedded" path="poky-kirkstone/meta-openembedded" remote="oe" revision="kirkstone"/>
 
 </manifest>
