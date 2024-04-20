@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="http://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com/TNTNTA" name="rpi-robot"/>
+  <remote fetch="https://github.com/ros" name="ros"/>
+  <remote fetch="https://github.com/yoctoproject" name="yocto"/>
+
+  <default remote="rpi-robot"/>
+  
+  <project name="poky" path="poky-kirkstone" remote="yocto" revision="kirkstone"/>
+  <project name="meta-rpi-robot" path="poky-kirkstone/meta-rpi-robot" revision="main"/>
+  <project name="meta-ros" path="poky-kirkstone/meta-ros" remote="ros" revision="kirkstone"/>
+  <project name="meta-qt5" path="poky-kirkstone/meta-qt5" remote="github" revision="kirkstone"/>
+
+</manifest>
