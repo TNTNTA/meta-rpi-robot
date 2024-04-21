@@ -15,6 +15,7 @@ BBLAYERS ?= " \
   ${OEROOT}/poky-kirkstone/meta-qt5 \
   ${OEROOT}/poky-kirkstone/meta-openembedded/meta-oe \
   ${OEROOT}/poky-kirkstone/meta-openembedded/meta-python \
+  ${OEROOT}/poky-kirkstone/meta-openembedded/meta-networking \
   ${OEROOT}/poky-kirkstone/meta-ros/meta-ros2-humble \
   ${OEROOT}/poky-kirkstone/meta-ros/meta-ros2 \
   ${OEROOT}/poky-kirkstone/meta-ros/meta-ros-common \

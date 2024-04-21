@@ -8,6 +8,7 @@ inherit packagegroup
 
 
 RDEPENDS:${PN} = "\
+	tcpdump \
 	luncher \
 	vlanconfig \
     rpi-robot-init \

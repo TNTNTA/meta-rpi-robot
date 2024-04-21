@@ -2,40 +2,17 @@ This README file contains information on the contents of the meta-rpi-robot laye
 
 Please see the corresponding sections below for details.
 
-Dependencies
-============
+# 简介
+本仓库是一个yocto 的meta layer，适配于raspberrypi 4b单板，旨在提供一个深度定制的yocto系统。
+# 使用
 
-  URI: <first dependency>
-  branch: <branch name>
+1. 下载完整源码
 
-  URI: <second dependency>
-  branch: <branch name>
+repo init -u https://github.com/TNTNTA/meta-rpi-robot.git -b kirkstone
+repo sync 
 
-  .
-  .
-  .
+2. 编译
 
-Patches
-=======
+TEMPLATECONF=poky-kirkstone/meta-rpi-robot/conf/template source poky-kirkstone/oe-init-build-env  rpi-build-2
+bitbake rpi-robot-image
 
-Please submit any patches against the meta-rpi-robot layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the meta-rpi-robot layer to your build
- II. Misc
-
-
-I. Adding the meta-rpi-robot layer to your build
-=================================================
-
-Run 'bitbake-layers add-layer meta-rpi-robot'
-
-II. Misc
-========
-
---- replace with specific information about the meta-rpi-robot layer ---
